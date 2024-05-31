@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Kendry</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.png" alt="">
+            </div>
+            <h1>Kendry Lorenzo</h1>
+            <h2>Data Analyst & BI</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/kendrylex?igsh=MTNpc2g1YjM3eXIzMg==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://t.me/kendrylex" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.linkedin.com/in/kendry-lorenzo-b86a39230?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Kendry,</span> analista de Datos con 4 años de experiencia, especializado en la estructura de datos, procesos ETL, creación de bases de datos, visualización de datos e Inteligencia de Negocios. Mi enfoque se centra en transformar datos complejos en información valiosa para la toma de decisiones estratégicas, mejorando así la eficiencia y el rendimiento de las organizaciones.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Nacimiento</strong>
+                            06/05/1998
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (809) 239-3059
+                        </li>
+                        <li>
+                            <strong>Celular</strong>
+                            (809) 909-7740
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            kendrylex@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            C/19, #1, El Progreso, Sto. Dgo. Norte, R.D.
+                        </li>
+                        <li>
+                            <strong>Cargo Actual</strong>
+                            <span>MIS & Data Deputy Manager</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-mountain"></i>
+                            <span>EXPLORAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dog"></i>
+                            <span>PERROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-people-roof"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>TECNO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pentaho DI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tableau/Tableau Prep</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MS Excel</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Gestión de Tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento Crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Liderazgo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de Análisis</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <span class="casa">A2 CAPACITATION</span>
+                    <div class="subitem">
+                        <h4>Tableau Certified Data Analyst</h4>
+                        <span class="fecha">2023</span>
+                        <p>Curso especializado en análisis de datos utilizando Tableau.</p>
+                    </div>
+                    <br>
+                    <div class="subitem">
+                        <h4>Excel Avanzado</h4>
+                        <span class="fecha">2023</span>
+                        <p>Curso avanzado de Excel para análisis de datos.</p>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <span class="casa">UDEMY</span>
+                    <div class="subitem">
+                        <h4>Python – Data Analysis</h4>
+                        <span class="fecha">2023</span>
+                        <p>Curso en línea sobre análisis de datos utilizando Python.</p>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <span class="casa">CENTU</span>
+                    <div class="subitem">
+                        <h4>Estudiante de Ingles</h4>
+                        <span class="fecha">2022 - Presente</span>
+                        <p>Programa de estudios de inglés para alcanzar un nivel intermedio alto.</p>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <span class="casa">UNIVERSIDAD O&M</span>
+                    <div class="subitem">
+                        <h4>Estudiante Ing. Sistemas y Computación</h4>
+                        <span class="fecha">2017 - Presente</span>
+                        <p>Programa de estudios en ingeniería de sistemas y computación.</p>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <span class="casa">CENTRO EDUCATIVO OTILIA PELÁEZ</span>
+                    <div class="subitem">
+                        <h4>Bachiller Técnico en Informática</h4>
+                        <span class="fecha">2013 - 2016</span>
+                        <p>Programa de estudios técnicos en informática.</p>
+                    </div>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <span class="casa">BANCO BHD</span>
+                    <div class="subitem">
+                        <h4>MIS & Data Deputy Manager</h4>
+                        <span class="fecha">2024 - Presente</span>
+                        <p>Gestión de datos y sistemas de información para el banco.</p>
+                    </div>
+                    <br>
+                    <div class="subitem">
+                        <h4>MIS & Platform Analyst</h4>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Responsable de análisis de plataformas y sistemas de información.</p>
+                    </div>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <span class="casa">SCOTIABANK REPUBLICA DOMINICANA</span>
+                    <div class="subitem">
+                        <h4>Merchant Service & Data Officer (Amex)</h4>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Responsable de servicios de comercio y análisis de datos para American Express.</p>
+                    </div>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <span class="casa">BANCO DOMINICANO DEL PROGRESO</span>
+                    <div class="subitem">
+                        <h4>Oficial Jr. Servicio al Afiliado Amex</h4>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>Responsable del servicio al cliente y gestión de afiliados de American Express.</p>
+                    </div>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2>PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img src="img/p1.png" alt="Proyecto 1">
+                <div class="overlay">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/p2.png" alt="Proyecto 2">
+                <div class="overlay">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/p3.png" alt="Proyecto 3">
+                <div class="overlay">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción del proyecto 3</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/p4.png" alt="Proyecto 4">
+                <div class="overlay">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción del proyecto 4</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/p5.png" alt="Proyecto 5">
+                <div class="overlay">
+                    <h3>Proyecto 5</h3>
+                    <p>Descripción del proyecto 5</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <img src="img/p6.png" alt="Proyecto 6">
+                <div class="overlay">
+                    <h3>Proyecto 6</h3>
+                    <p>Descripción del proyecto 6</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form action="/send_mail" method="post">
+                    <input type="text" name="nombre" placeholder="Tú Nombre" required>
+                    <input type="text" name="telefono" placeholder="Número telefónico" required>
+                    <input type="email" name="email" placeholder="Dirección de correo" required>
+                    <input type="text" name="tema" placeholder="Tema" required>
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
