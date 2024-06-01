@@ -18,6 +18,69 @@ html{
     left: 0;
     z-index: 99;
 }
+
+/*LOGO TABLEAU AJUSTE */
+.logo img {
+    height: 40px; /* Ajusta la altura según sea necesario */
+    width: 45px; /* Mantiene la proporción del logo */
+}
+
+/* Mantener el alineamiento vertical del logo y del menú */
+.contenedor-header header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--gap);
+    position: relative;
+    padding: 0;
+    margin-left: auto; /* Alinea el menú hacia la derecha */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-right: 1rem; /* Ajusta el espacio según sea necesario */
+    font-size: 24px; /* Ajusta el tamaño del texto según sea necesario */
+    color: #fff; /* Ajusta el color del texto según sea necesario */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+.logo-img {
+    height: 50px; /* Ajusta la altura según sea necesario */
+    width: auto; /* Mantiene la proporción del logo */
+    transition: transform 0.6s ease-in-out; /* Añade una transición suave */
+}
+
+.logo-img:hover {
+    transform: rotate(360deg); /* Rota el logo 360 grados */
+}
+
+/* Animación al cargar la página */
+@keyframes logoEntrance {
+    0% {
+        transform: scale(0.5) translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+.logo-img {
+    animation: logoEntrance 1s ease-in-out;
+}
+
+/* --------------------------------------------------------------- */
 .contenedor-header header{
     max-width: 1100px;
     margin: auto;
@@ -208,7 +271,48 @@ html{
 .sobremi button:hover .overlay{
     width: 100%;
 }
+a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a button {
+    all: unset; /* Elimina todos los estilos predeterminados del botón */
+    cursor: pointer;
+    padding: 10px 22px;
+    background-color: #459ACF;
+    color: #fff;
+    border: 2px solid #fff;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+}
+
+a button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+}
+
+a button:hover .overlay {
+    width: 100%;
+}
+
+
 /* SECCION S K I L L S */
+
+.curriculum .contenido-seccion .col.derecha h3 {
+    text-align: center;
+}
+
+.curriculum .contenido-seccion .col.izquierda h3 {
+    text-align: center;
+}
+
 .skills{
     background-color: #252A2E;
     color: #fff;
@@ -268,6 +372,20 @@ html{
     right: -15px;
     font-size: 14px;
 }
+.casa-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Añade un margen inferior para separación */
+}
+
+.icono-casa {
+    width: 43.5px; /* Ajusta el tamaño según tus necesidades */
+    height: 42.7px; /* Asegúrate de que este valor esté en píxeles */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+}
+
+
 /* Estas clases se agregaran dinamicamente mediante javascript */
 .skills .skill .sql{
     width: 0%;
@@ -771,3 +889,61 @@ footer .arriba{
 .interes i.click-animation {
     animation: interes-click 0.6s ease;
 }
+
+
+/* Animación para la barra de nevegacion */
+
+:root {
+    --primary: #459ACF;
+    --gap: 1rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: var(--gap);
+    position: relative;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-list > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-list > li > a {
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap; /* Evita el wrap text */
+    transition: color 0.2s ease-in-out;
+}
+
+.nav-list > li:hover > a {
+    color: var(--primary);
+}
+
+.nav-list > .active > a {
+    color: var(--primary);
+}
+
+.active-bar {
+    position: absolute;
+    bottom: 0;
+    height: 0.25rem;
+    background: var(--primary);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1), width 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+    width: 0; /* Se ajustará dinámicamente */
+}
+
+
