@@ -1,14 +1,36 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
+
+// Función que oculta o muestra el menú
+function mostrarOcultarMenu() {
+    const nav = document.getElementById("nav");
+    if (menuVisible) {
+        nav.classList = "";
         menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
+    } else {
+        nav.classList = "responsive";
         menuVisible = true;
     }
 }
+
+// Inicializa el estado del menú al cargar la página
+window.addEventListener("load", () => {
+    if (window.innerWidth < 768) {
+        document.getElementById("nav").classList = "";
+        menuVisible = false;
+    }
+});
+
+// Ajusta la visibilidad del menú al cambiar el tamaño de la ventana
+window.addEventListener("resize", () => {
+    if (window.innerWidth >= 768 && menuVisible) {
+        document.getElementById("nav").classList = "";
+        menuVisible = false;
+    } else if (window.innerWidth < 768 && menuVisible) {
+        document.getElementById("nav").classList = "responsive";
+        menuVisible = true;
+    }
+});
+
 
 function seleccionar(){
     //oculto el menu una vez que selecciono una opcion
