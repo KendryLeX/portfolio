@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 1.125rem;
+    background: #252A2E;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+.swiper-slide img {
+    display: block;
+    max-width: 95%; /* Ajusta este valor según tus necesidades */
+    max-height: 95%; /* Ajusta este valor según tus necesidades */
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 0.75rem;
+    height: 0.75rem;
+    display: inline-block;
+    border-radius: 100%;
+    background: white;
+    opacity: 0.2;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+}
