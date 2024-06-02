@@ -21,15 +21,15 @@
             </div>
             <nav id="nav" class="navigation">
                 <ul class="nav-list">
-                    <li class="active"><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                    <li class="active"><a href="#inicio" onclick="mostrarOcultarMenu()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="mostrarOcultarMenu()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="mostrarOcultarMenu()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="mostrarOcultarMenu()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="mostrarOcultarMenu()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="mostrarOcultarMenu()">CONTACTO</a></li>
                     <div class="active-bar"></div>
                 </ul>
-            </nav>
+            </nav>            
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -59,36 +59,36 @@
             <p><span>Hola, soy Kendry,</span> analista de Datos con 4 años de experiencia, especializado en la estructura de datos, procesos ETL, creación de bases de datos, visualización de datos e Inteligencia de Negocios. Mi enfoque se centra en transformar datos complejos en información valiosa para la toma de decisiones estratégicas, mejorando así la eficiencia y el rendimiento de las organizaciones.</p>
 
             <div class="fila">
-                <!-- datos personales -->
-                <div class="col">
-                    <h3>Datos Personales</h3>
-                    <ul>
-                        <li>
-                            <strong>Nacimiento</strong>
-                            06/05/1998
-                        </li>
-                        <li>
-                            <strong>Teléfono</strong>
-                            (809) 239-3059
-                        </li>
-                        <li>
-                            <strong>Celular</strong>
-                            (809) 909-7740
-                        </li>
-                        <li>
-                            <strong>Email</strong>
-                            kendrylex@hotmail.com
-                        </li>
-                        <li>
-                            <strong>Dirección</strong>
-                             C.Fantino Falco, Sto. Dgo., R.D.
-                        </li>
-                        <li>
-                            <strong>Cargo Actual</strong>
-                            <span>MIS & Data Deputy Manager</span>
-                        </li>
-                    </ul>
-                </div>
+            <!-- datos personales -->
+            <div class="col datos-personales">
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li>
+                        <strong>Nacimiento</strong>
+                        06/05/1998
+                    </li>
+                    <li>
+                        <strong>Teléfono</strong>
+                        (809) 239-3059
+                    </li>
+                    <li>
+                        <strong>Celular</strong>
+                        (809) 909-7740
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        kendrylex@hotmail.com
+                    </li>
+                    <li>
+                        <strong>Dirección</strong>
+                        C.Fantino Falco, Sto. Dgo., R.D.
+                    </li>
+                    <li>
+                        <strong>Cargo Actual</strong>
+                        <span>MIS & Data Deputy Manager</span> 
+                    </li>
+                </ul>
+            </div>
 
                 <!-- intereses -->
                 <div class="col">
@@ -393,52 +393,64 @@
     </div>
 </section>
 
-    <!-- SECCION PORTFOLIO -->
+<!-- SECCION PORTFOLIO -->
 <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
         <h2>PORTFOLIO</h2>
         <div class="galeria">
             <div class="proyecto">
-                <img src="img/p1.png" alt="Proyecto 1">
-                <div class="overlay">
-                    <h3>Proyecto Tableau 1</h3>
-                    <p>Ejemplo de proyecto en Tableau</p>
-                </div>
+                <a href="proyectos/proyecto1.html">
+                    <img src="img/p1.png" alt="Proyecto 1">
+                    <div class="overlay">
+                        <h3>Dashboard Tableau</h3>
+                        <p>Monitoreo de portafolios</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
-                <img src="img/p2.png" alt="Proyecto 2">
-                <div class="overlay">
-                    <h3>Proyecto Pentaho 1</h3>
-                    <p>Ejemplo de proyecto en Pentaho</p>
-                </div>
+                <a href="proyectos/proyecto2.html">
+                    <img src="img/p2.png" alt="Proyecto 2">
+                    <div class="overlay">
+                        <h3>Pentaho</h3>
+                        <p>Carga de Datos estructurados</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
-                <img src="img/p3.png" alt="Proyecto 3">
-                <div class="overlay">
-                    <h3>Proyecto Tableau Prep 1</h3>
-                    <p>Ejemplo de proyecto en Tableau Prep</p>
-                </div>
+                <a href="proyectos/proyecto3.html">
+                    <img src="img/p3.png" alt="Proyecto 3">
+                    <div class="overlay">
+                        <h3>Tableau Prep</h3>
+                        <p>ETL de datos, limpieza y estructurado</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
-                <img src="img/p4.png" alt="Proyecto 4">
-                <div class="overlay">
-                    <h3>Proyecto Tableau 2</h3>
-                    <p>Ejemplo de proyecto en Tableau</p>
-                </div>
+                <a href="proyectos/proyecto4.html">
+                    <img src="img/p4.png" alt="Proyecto 4">
+                    <div class="overlay">
+                        <h3>Dashboard Tableau</h3>
+                        <p>Monitoreo de cobros automaticos</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
-                <img src="img/p5.png" alt="Proyecto 5">
-                <div class="overlay">
-                    <h3>Proyecto PBI 1</h3>
-                    <p>Ejemplo de proyecto en Power BI</p>
-                </div>
+                <a href="proyectos/proyecto5.html">
+                    <img src="img/p5.png" alt="Proyecto 5">
+                    <div class="overlay">
+                        <h3>Dashboard Power BI</h3>
+                        <p>Experiencia y transacciones de clientes</p>
+                    </div>
+                </a>
             </div>
             <div class="proyecto">
-                <img src="img/p6.png" alt="Proyecto 6">
-                <div class="overlay">
-                    <h3>Proyecto PBI 2</h3>
-                    <p>Ejemplo de proyecto en Power BI</p>
-                </div>
+                <a href="proyectos/proyecto6.html">
+                    <img src="img/p6.png" alt="Proyecto 6">
+                    <div class="overlay">
+                        <h3>Dashboard Power BI</h3>
+                        <p>Tipo de clientes, activas y pasivas</p>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
